@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <div class="dashboard-card">
+        <h2 class="dashboard-title"><%= greeting %></h2>
+        <h3 class="dashboard-subtitle">Your Role: <%= role %></h3>
+        <% if (typeof expiryDays !== 'undefined' && expiryDays <= 5) { %>
+        <div class="expiry-warning">
+          ⚠️ Your password will expire in <%= expiryDays %> day(s). Please
+          update it soon.
+        </div>
+        <% } %>
+
+        <p class="dashboard-menu-title">Menu:</p>
+        <ul class="dashboard-menu">
+          <% menus.forEach(menu => { %>
+          <li><%= menu %></li>
+          <% }) %>
+        </ul>
+        <form action="/logout" method="POST">
+          <button type="submit" class="logout-btn">Logout</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

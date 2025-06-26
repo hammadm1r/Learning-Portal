@@ -1,0 +1,190 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Background with gradient */
+body {
+  height: 100vh;
+  background: 
+    linear-gradient(rgba(102, 126, 234, 0.6), rgba(118, 75, 162, 0.6)),
+    url('/images/bg.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Centered login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+select option {
+  color: black;
+  background-color: white;
+}
+
+/* Glassy card */
+.login-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Title */
+.login-title {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+/* Form inputs */
+.login-form input,
+.login-form select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.login-form input::placeholder {
+  color: #e0e0e0;
+}
+
+.login-form select {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.login-form input:focus,
+.login-form select:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Submit button */
+.login-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #6c63ff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #574fd6;
+}
+
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Glassy card */
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 500px;
+  color: white;
+  text-align: center;
+}
+
+/* Text styles */
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 0 0 4px rgba(255,255,255,0.7);
+}
+
+.dashboard-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.dashboard-menu-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.dashboard-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-menu li {
+  background: rgba(255,255,255,0.2);
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 10px;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.dashboard-menu li:hover {
+  background: rgba(255,255,255,0.4);
+}
+.logout-btn {
+    width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  background-color: crimson;
+  border-radius: 8px;
+}
+
+.error-message {
+  color: crimson;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+  margin-top:20px
+}
+
+.logout-btn:hover {
+  background-color: darkred;
+}
+
+.expiry-warning {
+  background-color: rgba(255, 193, 7, 0.2);
+  color: #ffc107;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
